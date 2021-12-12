@@ -1,0 +1,510 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #191919;
+	font-family: sans-serif;
+}
+@font-face{
+	font-family: 'itim';
+	src: url(../fonts/Itim-Regular.ttf);
+	font-style: normal;
+}
+@font-face{
+	font-family: 'rubik';
+	src: url(../fonts/Rubik-Regular.ttf);
+}
+p{
+	font-family: rubik;
+}
+h1{
+	font-family: itim;
+}
+h2, h3{
+	font-family: itim;
+}
+#header{
+	background-color: #1a1a1d;
+	width: 100%;
+	height: 65px;
+	position: fixed;
+	z-index: 2;
+}
+.logo{
+	width: 20%;
+	height: 50px;
+}
+#menu{
+	float: right;
+	position: relative;
+	bottom: 47px;
+	left: -100px;
+}
+#menu ul{
+	list-style: none;
+    text-align: center;
+}
+#menu ul li{
+	display: inline-block;
+	margin-left: 10px;
+	text-transform: uppercase;
+}
+#menu ul li a{
+	color:#ffffff;
+	text-decoration: none;
+	display: block;
+	width: 100px;
+	padding: 20px 5px;
+	font-family: itim;
+}
+#menu ul li:hover{
+	background-color: #e9c92d;
+	border-radius: 10px;
+	transition: 0.4s;
+}
+#sub-menu{
+	display: none;
+}
+#menu ul li:hover #sub-menu{
+	display: block;
+	position: absolute;
+	background-color: #191919;
+	margin-top: 2px;
+	margin-left: -2px;
+	width: 35%;
+}
+#menu ul li:hover #sub-menu ul{
+	display: block;
+}
+#menu ul li:hover #sub-menu ul li{
+	width: 150px;
+	padding: 2%;
+	border-bottom: 1px dotted #ffffff;
+	background: transparent;
+	border-radius: 0;
+	text-align: left;
+}
+#menu ul li:hover #sub-menu ul li:last-child{
+	border-bottom: none;
+}
+#menu ul li:hover #sub-menu ul li a:hover{
+	border-bottom: none;
+	color: #fff056;
+}
+.bgcover1{
+	width: 100%;
+	height: 600px;
+	background-image: url('../images/flowersbg2.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	z-index: 1;
+}
+.overlay{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.4);
+}
+
+.welcome{
+	width: 30%;
+	height: 50%;
+	background-color: rgba(0,0,0,0.7);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: #ffffff;
+}
+.welcome{
+	text-align: center;
+	padding-top: 40px;
+	animation: move-second 3s;
+	animation-timing-function: ease;
+}
+.welcome p{
+	font-size: 30px;
+	animation: move-second 3s;
+	animation-timing-function: ease;
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.cleaner{
+	clear: both;
+}
+#first-title{
+	padding-top: 5%;
+	text-align: center;
+	color: #ffffff;
+	font-family: itim;
+	font-size: 25px;
+	position: relative;
+	animation: move-first 3s;
+	animation-timing-function: ease;
+}
+#second-title{
+	text-align: center;
+	color: #ffffff;
+	font-size: 25px;
+}
+#content1{
+	margin: 5% auto;
+}
+
+.block1{
+	width: 26.67%;
+	height: 300px;
+	background-color: #fff056;
+	float: left;
+	text-align: center;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+.left-margin{
+	margin-left: 5%;
+}
+.right-margin{
+	margin-right: 5%;
+}
+.block1 h3{
+	text-align: center;
+	margin-top: 5%;
+	font-size: 25px;
+}
+.block1 a{
+	text-decoration: none;
+	color: #ffffff;
+}
+.content2{
+	width: 70%;
+	box-sizing: border-box;
+	background: #1a1a1d;
+	border-radius: 4px;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+	margin: 5% auto;
+}
+.position-ct1{
+	position: relative;
+	bottom: -10px;
+}
+.size-ct1{
+	height: 530px;
+}
+.block2{
+	width: 25%;
+	height: 250px;
+	float: right;
+	margin-right: 10%;
+	margin-top: 10%;
+	background-color: #fff056;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+	border: 2px solid #dfe2db;
+}
+.content2 h3{
+	margin-left: 10%;
+	padding-top: 5%;
+	color: #ffffff;
+	font-size: 25px;
+}
+.content2 p{
+	width: 40%;
+	text-align: justify;
+	margin-left: 10%;
+	font-size: 17px;
+	color: #ffffff;
+}
+.margin-top-ct2{
+	margin-top: 3%;
+}
+.position-ct2{
+	position: relative;
+	bottom: -50px;
+}
+.size-ct2{
+	height: 430px;
+}
+.position-ct3{
+	position: relative;
+	bottom: -2%;
+}
+.size-ct3{
+	height: 400px;
+}
+#third-title{
+	margin-top: 10%;
+	text-align: center;
+	color: #ffffff;
+	font-size: 25px;
+}
+.block3{
+	width: 17%;
+	height: 400px;
+	float: left;
+	margin-top: 5%;
+	background-color: #fff056;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+	border: 2px solid #dfe2db;
+}
+.margin-left1{
+	margin-left: 10%;
+}
+.margin-left2{
+	margin-left: 5%;
+}
+.content3{
+	margin: 0 auto;
+}
+.content3 h3{
+	float: right;
+	margin-right: 33.5%;
+	margin-top: 5%;
+	font-size: 25px;
+}
+.content3 p{
+	width: 30%;
+	float: right;
+	margin-right: 10%;
+	font-size: 17px;
+	text-align: justify;
+}
+
+.margin-top1{
+	margin-top: 5%;
+}
+.block1 img{
+	width: 320px;
+	height: 220px;
+	margin-top: 2%;
+}
+.block2 img{
+	width: 100%;
+	height: 100%;
+}
+.block3 img{
+	width: 100%;
+	height: 100%;
+}
+
+.mix h3,p{
+	color: #dfe2db;
+}
+#footer{
+	background-color: #1a1a1d;
+	width: 100%;
+	height: 220px;
+	margin-top: 10%;
+}
+#footer-content{
+	width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+	justify-content: space-between;
+}
+#list ul{
+	list-style: none;
+    text-align: center;
+	text-align: left;
+	margin-top: 10%;
+}
+#list ul li a{
+	text-decoration: none;
+	color:#ffffff;
+	display: block;
+	width: 120px;
+	padding: 4%;
+}
+#map iframe{
+	width: 400px;
+	height: 200px;
+	padding-top: 4%;
+}
+#footer-content2{
+	text-align: left;
+	color: #ffffff;
+	margin-bottom: 4%;
+	padding-bottom: 2%;
+	border-bottom: 2px solid #dfe2db;
+}
+#footer-content p{
+	margin-top: 4%;
+	color: #dfe2db
+}
+#footer-content2 h2{
+	margin-bottom: 4%;
+	color: #dfe2db;
+}
+#footer-icons {
+	color: #dfe2db;
+	text-decoration: none;
+}
+/*KONTAKT*/
+.wrapper{
+	text-align: center;
+	color: #dfe2db;
+	padding-top: 10%;
+}
+#border{
+	width: 100px;
+	height: 10px;
+	margin: 30px auto;
+	background-color: #e9c92d;
+}
+#contact-form{
+	max-width: 600px;
+	margin: auto;
+	padding: 3%;
+	overflow: hidden;
+	border-radius: 10px;
+	background-color: rgba(0,0,0,0.7);
+}
+.contact-form-text{
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	margin: 16px 0;
+	border: 0;
+	background-color: #1a1a1d;
+	padding: 20px 40px;
+	outline: none;
+	color: #ffffff;
+	transition: 0.5s;
+	border-radius: 10px;
+}
+.contact-form-text:focus{
+	box-shadow: 0 0 5px 2px #fff056; 
+}
+textarea.contact-form-text{
+	resize: none;
+	height: 150px;
+}
+.contact-form-btn{
+	border: 0;
+	background-color: #e9c92d;
+	color: #1a1a1d;
+	font-size: 16px;
+	padding: 12px 50px;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 0.4s;
+	font-family: rubik;
+}
+.contact-form-btn:hover{
+	background-color: #ffd500;
+}
+#contact-content{
+	height: 100px;
+	width: 20%;
+	margin: 5% auto;
+	text-align: center;
+	border: 2px solid #e9c92d;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+#contact-content p{
+	margin-top: 3%;
+}
+/*Balkonske biljke*/ /*Bastenski rasad*/
+.wrapperbb1{
+	background-color: #191919
+}
+.wrapperbb2{
+	width: 80%; 
+	margin: 0 auto;
+	z-index: 2;
+}
+.blockbb{
+	padding-top: 2%;
+	padding-bottom: 2%;
+	display: inline-block;
+	text-align: center;
+	width: 24%;
+	height: 220px;
+	background-color: #191919;
+	float: left;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+.left-margin-bb{
+	margin-left: 7%;
+}
+.right-margin-bb{
+	margin-right: 7%;
+}
+.margin-top-bb{
+	margin-top: 5%;
+}
+.width-height{
+	width: 220px;
+	height: 200px;
+}
+.wrapperbb1 p{
+	color: #ffffff;
+}
+/*O nama*/
+#wrapper-aboutus{
+	text-align: center;
+	height: 500px;
+	width: 80%;
+	margin: 0 auto;
+	background-color: #dfe2db;
+	color: #1a1a1d;
+	padding-top: 10%;
+}
+#profile-picture{
+	width: 24%;
+	height: 400px;
+	margin-left: 15%;
+	background-color: #1a1a1d;
+	border: 2px solid #191919;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+#description{
+	width: 35%;
+	position: relative;
+	font-size: 18px;
+	text-align: justify;
+	top: -70%;
+	right: -55%;
+}
+.white{
+	background-color: #dfe2db;
+}	
+#profile-picture img{
+	width: 100%;
+	height: 100%;
+}
+/*Galerija*/
+.blockg{
+	display: inline-block;
+	text-align: center;
+	width: 24%;
+	height: 320px;
+	background-color: #191919;
+	float: left;
+	border: 2px solid #dfe2db;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+.blockg img{
+	width: 100%;
+	height: 100%;
+}
+.title-set{
+	padding-top: 8%;
+	margin-left: 16%;
+	margin-bottom: 4%;
+	font-size: 18px;
+	color: #dfe2db;
+	animation: move-first 3s;
+	animation-timing-function: ease;
+}
+@keyframes move-first{
+  from {left: -500px;}
+  to {left: 0px;}
+}
+@keyframes move-second{
+  from {top: -250px;}
+  to {bottom: 0px;}
+}
