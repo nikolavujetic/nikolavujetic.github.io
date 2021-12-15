@@ -100,6 +100,8 @@ h2, h3{
 	background-repeat: no-repeat;
 	position: relative;
 	z-index: 1;
+	border-bottom: solid;
+	border-color: #ffffff;
 }
 .overlay{
 	position: absolute;
@@ -119,6 +121,9 @@ h2, h3{
 	left: 50%;
 	transform: translate(-50%,-50%);
 	color: #ffffff;
+	border-radius: 10px;
+	padding: 10px;
+	
 }
 .welcome{
 	text-align: center;
@@ -127,9 +132,13 @@ h2, h3{
 	animation-timing-function: ease;
 }
 .welcome p{
-	font-size: 30px;
+	font-size: 35px;
 	animation: move-second 3s;
 	animation-timing-function: ease;
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	font-family: itim;
 }
 .cleaner{
 	clear: both;
@@ -260,6 +269,7 @@ h2, h3{
 	margin-right: 33.5%;
 	margin-top: 5%;
 	font-size: 25px;
+	text-transform: uppercase;
 }
 .content3 p{
 	width: 30%;
@@ -284,11 +294,20 @@ h2, h3{
 	width: 100%;
 	height: 100%;
 }
+.mix h3,p{
+	color: #dfe2db;
+}
+#third-title h2{
+	text-transform: uppercase;
+	color: #fff056;
+}
 #footer{
 	background-color: #1a1a1d;
 	width: 100%;
 	height: 220px;
 	margin-top: 10%;
+	border-top: solid;
+	border-color: #ffffff;
 }
 #footer-content{
 	width: 1000px;
@@ -330,8 +349,9 @@ h2, h3{
 	margin-bottom: 4%;
 	color: #dfe2db;
 }
-#footer-icons{
+#footer-icons {
 	color: #dfe2db;
+	text-decoration: none;
 }
 /*KONTAKT*/
 .wrapper{
